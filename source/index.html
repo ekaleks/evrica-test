@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Тестовое задание для Эврики</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body class="page-body">
+  <header class="page-header">
+    <nav class="page-header__nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">О магазине</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Оплата</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Доставка</a>
+        </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__item--active" href="#">Отзывы</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Новости</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Статьи</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Контакты</a>
+        </li>
+        </ul>
+        <div class="main-nav__account">
+          <a class="main-nav__account-link" href="#"> Личный кабинет</a>
+        </div>
+        <div class="main-nav__favorites">
+          <a class="main-nav__favorites-link" href="" >Избранное<!--:before (2)--></a>
+        </div>
+    </nav>
+    <div class="page-header__inner">
+      <a class="page-header__logo" href="#"></a>
+      <div class="page-header__wrapper-center">
+      <form class="page-header__form" action="" method="POST" >
+        <input class="page-header__input-search" type="search" placeholder="Поиск по каталогу товаров">
+        <input class="page-header__input-submit" type="submit" value="">
+      </form>
+      <address class="page-header__contacts">
+        <p class="page-header__tel">7 /495/ 542 - 05 - 95</p>
+        <a class="page-header__callback" href="#">Обратный звонок</a>
+        <a class="page-header__email" href="#">info@lenoma.ru</a>
+        <p class="page-header__opening-horse">пн - пт 9.00 - 21.00</p>
+      </address>
+      </div>
+      <a class="page-header__basket"><!--:before (4)--></a>
+    </div>
+    <nav class="page-header__nav additional-nav">
+          <ul class="additional-nav__list">
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Акция</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Парфюмерия</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Новинки</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Макияж</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Уход за кожей</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Уход за волосами</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Для мужчин</a>
+              <ul class="additional-nav__submenu submenu">
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Мужские ароматы</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Дезодоранты</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Гели для душа</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Шампуни и кондиционеры</a>
+                </li>
+              </ul>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Organic</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Подарки</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Sale</a>
+            </li>
+          </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="page-main__slider slider">
+    <div class="slider__slides">
+      <input class="slider__field" type="radio" id="btn-1" name="toggle" checked="">
+      <input class="slider__field" type="radio" id="btn-2" name="toggle">
+      <input class="slider__field" type="radio" id="btn-3" name="toggle">
+      <div class="slider__controls">
+        <label class="slider__label" for="btn-1"></label>
+        <label class="slider__label" for="btn-2"></label>
+        <label class="slider__label" for="btn-3"></label>
+      </div>
+      <div class="slider__slide" id="slide1">
+        <h1 class="slider__title">Идеальный аромат от Giorgio Armani</h1>
+        <a class="slider__link-details" href="#">Подробнее</a>
+        <div class="slider__left-inner">
+          <h3 class="slider__title-recommendations">Наши рекомендации</h3>
+          <ul class="slider__list">
+            <li class="slider__item">
+              <a class="slider__link" href="#">Интересные предложения</a>
+            </li>
+            <li class="slider__item">
+              <a class="slider__link" href="#">Женская парфюмерия</a>
+            </li>
+            <li class="slider__item">
+              <a class="slider__link" href="#">Товар со скидками</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="slider__slide" id="slide2"></div>
+      <div class="slider__slide" id="slide3"></div>
+    </div>
+    </section>
+    <section class="page-main__advantages advantages">
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <a class="advantages__link" href="#">Оригинальная продукция</a>
+        </li>
+        <li class="advantages__item">
+          <a class="advantages__link" href="#">Бесплатная доставка по Москве и России</a>
+        </li>
+        <li class="advantages__item">
+          <a class="advantages__link" href="#">Система скидок</a>
+        </li>
+        <li class="advantages__item">
+          <a class="advantages__link" href="#">Срочная доставка</a>
+        </li>
+      </ul>
+    </section>
+    <section class="page-main__hits-catalog catalog">
+      <h2 class="catalog__title">Хиты продаж</h2>
+      <a class="catalog__arrow" href=""></a>
+      <article class="catalog__item product"><!--:before (sale)-->
+        <div class="product__image-container">
+          <img class="product__image" src="img/fleur-narcotique.jpg">
+        </div>
+          <div class="product__text-container">
+          <h3 class="product__title">Fleur Narcotique</h3>
+          <p class="product__brand">Ex Nihilo</p>
+          <p class="product__type">Парфюмированная вода</p>
+          <p class="product__gender">Женская</p>
+          <p class="product__price"><s>8 990 Р. —</s> от 4 990 Р. —</p>
+        </div>
+      </article>
+      <article class="catalog__item product">
+        <div class="product__image-container">
+          <img class="product__image" src="img/100-love.jpg">
+        </div>
+        <div class="product__text-container">
+          <h3 class="product__title">100% Love</h3>
+          <p class="product__brand">Ex Nihilo</p>
+          <p class="product__type">Парфюмированная вода</p>
+          <p class="product__gender">Женская</p>
+          <p class="product__price">от 2 390 Р. —</p>
+        </div>
+      </article>
+      <article class="catalog__item product">
+        <div class="product__image-container">
+          <img class="product__image" src="img/corso-como.jpg">
+        </div>
+        <div class="product__text-container">
+          <h3 class="product__title">10 Corso Como</h3>
+          <p class="product__brand">Ex Nihilo</p>
+          <p class="product__type">Парфюмированная вода</p>
+          <p class="product__gender">Женская</p>
+          <p class="product__price">от 7 890Р. —</p>
+        </div>
+      </article>
+      <article class="catalog__item product">
+        <div class="product__image-container">
+         <img class="product__image" src="img/1881-collection.jpg">
+        </div>
+        <div class="product__text-container">
+          <h3 class="product__title">1881 Collection</h3>
+          <p class="product__brand">Ex Nihilo</p>
+          <p class="product__type">Парфюмированная вода</p>
+          <p class="product__gender">Женская</p>
+          <p class="product__price">от 3 270 Р. —</p>
+        </div>
+      </article>
+      <a class="catalog__arrow" href="#"></a>
+    </section>
+    <section class="page-main__new-catalog catalog">
+      <h2 class="catalog__title">Новинки</h2>
+      <a class="catalog__arrow" href=""></a>
+      <article class="catalog__item product">
+        <div class="product__image-container">
+         <img class="product__image" src="img/aigner-black.jpg">
+        </div>
+        <div class="product__text-container">
+          <h3 class="product__title">Aigner Black</h3>
+          <p class="product__brand">Ex Nihilo</p>
+          <p class="product__type">Парфюмированная вода</p>
+          <p class="product__gender">Женская</p>
+          <p class="product__price">от 6 780 Р. —</p>
+        </div>
+      </article>
+      <article class="catalog__item product">
+        <div class="product__image-container">
+          <img class="product__image" src="img/aigner-icedrops.jpg">
+        </div>
+        <div class="product__text-container">
+          <h3 class="product__title">Aigner Black Icedrops</h3>
+          <p class="product__brand">Ex Nihilo</p>
+          <p class="product__type">Парфюмированная вода</p>
+          <p class="product__gender">Женская</p>
+          <p class="product__price">от 2 990 Р. —</p>
+        </div>
+      </article>
+      <article class="catalog__item product">
+        <div class="product__image-container">
+          <img class="product__image" src="img/fleur-narcotique2.jpg">
+        </div>
+        <div class="product__text-container">
+          <h3 class="product__title">Fleur Narcotique</h3>
+          <p class="product__brand">Ex Nihilo</p>
+          <p class="product__type">Парфюмированная вода</p>
+          <p class="product__gender">Женская</p>
+          <p class="product__price">от 4 990 Р. —</p>
+        </div>
+      </article>
+      <article class="catalog__item product">
+        <div class="product__image-container">
+          <img class="product__image" src="img/aire-loco.jpg">
+        </div>
+        <div class="product__text-container">
+          <h3 class="product__title">Aire Loco</h3>
+          <p class="product__brand">Ex Nihilo</p>
+          <p class="product__type">Парфюмированная вода</p>
+          <p class="product__gender">Женская</p>
+          <p class="product__price">от 3 910 Р. —</p>
+        </div>
+      </article>
+      <a class="catalog__arrow" href=""></a>
+    </section>
+    <section class="page-main__special-catalog catalog">
+      <h2 class="catalog__title">Специальные предложения</h2>
+      <a class="catalog__arrow" href=""></a>
+      <article class="catalog__item product">
+        <div class="product__image-container">
+          <img class="product__image" src="img/always-pretty.jpg">
+        </div>
+        <div class="product__text-container">
+          <h3 class="product__title">8 Always Pretty</h3>
+          <p class="product__brand">Ex Nihilo</p>
+          <p class="product__type">Парфюмированная вода</p>
+          <p class="product__gender">Женская</p>
+          <p class="product__price">от 4 990 Р. —</p>
+        </div>
+      </article>
+      <article class="catalog__item product">
+        <div class="product__image-container">
+          <img class="product__image" src="img/fan-di-fendi.jpg">
+        </div>
+        <div class="product__text-container">
+          <h3 class="product__title">Fan di Fendi Extreme</h3>
+          <p class="product__brand">Ex Nihilo</p>
+          <p class="product__type">Парфюмированная вода</p>
+          <p class="product__gender">Женская</p>
+          <p class="product__price">от 2 390 Р. —</p>
+        </div>
+      </article>
+      <article class="catalog__item product">
+        <div class="product__image-container">
+          <img class="product__image" src="img/tease-limited.jpg">
+        </div>
+        <div class="product__text-container">
+          <h3 class="product__title">Tease Limited Edition
+          Eau de Parfum</h3>
+          <p class="product__brand">Ex Nihilo</p>
+          <p class="product__type">Парфюмированная вода</p>
+          <p class="product__gender">Женская</p>
+          <p class="product__price">от 3 910 Р. —</p>
+        </div>
+      </article>
+      <article class="catalog__item product">
+        <div class="product__image-container">
+          <img class="product__image" src="img/001.jpg">
+        </div>
+        <div class="product__text-container">
+          <h3 class="product__title">001</h3>
+          <p class="product__brand">Ex Nihilo</p>
+          <p class="product__type">Парфюмированная вода</p>
+          <p class="product__gender">Женская</p>
+          <p class="product__price">от 4 990 Р. —</p>
+        </div>
+      </article>
+      <a class="catalog__arrow" href="#"></a>
+    </section>
+    <section class="page-main__brands-catalog brands">
+      <h2 class="brands__title">Топ брендов</h2>
+      <h4 class="brands__subtitle">Все бренды</h4>
+      <ul class="brands__logo-list">
+        <li class="brands__logo-item">
+          <a class="brands__logo-link" href="#"></a>
+        </li>
+        <li class="brands__logo-item">
+          <a class="brands__logo-link" href="#"></a>
+        </li>
+        <li class="brands__logo-item">
+          <a class="brands__logo-link" href="#"></a>
+        </li>
+        <li class="brands__logo-item">
+          <a class="brands__logo-link" href="#"></a>
+        </li>
+        <li class="brands__logo-item">
+          <a class="brands__logo-link" href="#"></a>
+        </li>
+        <li class="brands__logo-item">
+          <a class="brands__logo-link" href="#"></a>
+        </li>
+      </ul>
+      <a class="brands__arrow" href=""></a>
+      <ul class="brands__list">
+        <li class="brands__item">
+          <ul class="brands__sublist">
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Azzaro</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Burberry</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Bvlgari</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Calvin Klein</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Carolina Herrera</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Cartier</a>
+            </li>
+          </ul>
+        </li>
+        <li class="brands__item">
+          <ul class="brands__sublist">
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Cristian Dior</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Dana</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Davidoff</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Dolce & Gabbana</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Elizabeth Arden</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Estee Lauder</a>
+            </li>
+          </ul>
+        </li>
+        <li class="brands__item">
+          <ul class="brands__sublist">
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Giorgio Armani</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Givenchy</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Gucci</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Guerlain</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Hugo Boss</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Issey Miyake</a>
+            </li>
+          </ul>
+        </li>
+        <li class="brands__item">
+          <ul class="brands__sublist">
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Ivanka Trump</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Jean Paul Gaultier</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Juicy Couture</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Lancome</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Liz Claiborne</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Mont Blanc</a>
+            </li>
+          </ul>
+        </li>
+        <li class="brands__item">
+          <ul class="brands__sublist">
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Paco Rabanne</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Parfums De Coeur</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Ralph Lauren</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Thierry Mugler</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Versace</a>
+            </li>
+            <li class="brands__subitem">
+              <a class="brands__link" href="#">Yves Saint Laurent</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <a class="brands__arrow" href=""></a>
+    </section>
+    <section class="page-main__articles-news">
+      <h2 class="page-main__title">Статьи и новости</h2>
+      <section class="page-main__articles articles">
+        <article class="articles__article">
+          <a class="articles__link" href="#">
+            <h3 class="articles__title">Парфюмерия в нашей жизни</h3>
+            <p class="articles__date">26 апреля 2017</p>
+            <p class="articles__text">
+              Как ароматы могут влиять на ваше настроение, самочувствие,
+              деловые отношения и любовные завоевания? Все секрет магической силы различных парфюмов,
+              вы, сможете открыть для себя, прочитав эту статью!
+            </p>
+          </a>
+        </article>
+        <article class="articles__article">
+          <a class="articles__link" href="#">
+            <h3 class="articles__title">Топ женских ароматов - Весна 2016</h3>
+            <p class="articles__date">26 апреля 2017</p>
+            <p class="articles__text">
+              Как ароматы могут влиять на ваше настроение, самочувствие,
+              деловые отношения и любовные завоевания? Все секреты
+              магической силы различных парфюмов, вы, сможете открыть для себя, прочитав эту статью!</p>
+          </a>
+        </article>
+        <article class="articles__article">
+          <a class="articles__link" href="#">
+            <h3 class="articles__title">Победители парфюмерных премий Art and Olfaction
+            Awards 2014 и Canadian Fragrance Awards 2014</h3>
+            <p class="articles__date">26 апреля 2017</p>
+            <p class="articles__text">
+              В Канаде прошло награждения победителей девятой ежегодной премии ароматов «Canadian Fragrance Awards 2014».
+            </p>
+          </a>
+        </article>
+        <a class="articles__link-all" href="">Смотреть все статьи</a>
+      </section>
+      <section class="page-main__news news">
+        <article class="news__article">
+          <a class="news__link" href="#">
+            <h3 class="news__title">Geza Shoen, Mark Buxton и Bertrand
+            Duchaufour</h3>
+            <p class="news__date">26 апреля 2017</p>
+            <p class="news__text">Три поистине великих парфюмера, объединили свои общие труды
+               и выпустили коллекция под названием Renegades.</p>
+          </a>
+        </article>
+        <article class="news__article">
+          <a class="news__link" href="#">
+            <h3 class="news__title">No Ordinary Man от Korloff Paris</h3>
+            <p class="news__date">26 апреля 2017</p>
+            <p class="news__text">Мужской аромат выпущенный в 2016 году воплощает силу духа и отвагу</p>
+          </a>
+        </article>
+        <article class="news__article">
+          <a class="news__link" href="#">
+            <h3 class="news__title">Новый аромат представляет собой</h3>
+            <p class="news__date">26 апреля 2017</p>
+            <p class="news__text">Новинка 2016 года для мужчин от торгового дома Amouage - Bracken for Men. обладателя.</p>
+          </a>
+        </article>
+        <a class="news__link-all" href="">Смотреть все новости</a>
+      </section>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__inner">
+      <nav class="page-footer__menu">
+        <h3 class="page-footer__title">О компании</h3>
+        <ul class="page-footer__menu-list">
+          <li class="page-footer__menu-item">
+            <a class="page-footer__menu-link" href="#">О магазине</a>
+          </li>
+          <li class="page-footer__menu-item">
+            <a class="page-footer__menu-link" href="#">Оплата</a>
+          </li>
+          <li class="page-footer__menu-item">
+            <a class="page-footer__menu-link" href="#">Доставка</a>
+          </li>
+          <li class="page-footer__menu-item">
+            <a class="page-footer__menu-link" href="#">Новости</a>
+          </li>
+          <li class="page-footer__menu-item">
+            <a class="page-footer__menu-link" href="#">Статьи</a>
+          </li>
+          <li class="page-footer__menu-item">
+            <a class="page-footer__menu-link" href="#">Контакты</a>
+          </li>
+          <li class="page-footer__menu-item">
+            <a class="page-footer__menu-link" href="#">Информация о заказах</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="page-footer__catalog">
+        <h3 class="page-footer__title">Каталог</h3>
+        <ul class="page-footer__catalog-list">
+          <li class="page-footer__catalog-item">
+            <a class="page-footer__catalog-link" href="#">Женская парфюмерия</a>
+          </li>
+          <li class="page-footer__catalog-item">
+            <a class="page-footer__catalog-link" href="#">Мужская парфюмерия</a>
+          </li>
+          <li class="page-footer__catalog-item">
+            <a class="page-footer__catalog-link" href="#">Новинки</a>
+          </li>
+          <li class="page-footer__catalog-item">
+            <a class="page-footer__catalog-link" href="#">Средства ухода</a>
+          </li>
+          <li class="page-footer__catalog-item">
+            <a class="page-footer__catalog-link" href="#">Селективная косметика</a>
+          </li>
+          <li class="page-footer__catalog-item">
+            <a class="page-footer__catalog-link" href="#">Духи для дома</a>
+          </li>
+          <li class="page-footer__catalog-item">
+            <a class="page-footer__catalog-link" href="#">Винтаж</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="page-footer__contacts">
+        <p class="page-footer__contacts-tel">+7 /495/ 542-05-95</p>
+        <p class="page-footer__contacts-text">
+          Мы доступны также <a class="" href=""></a> <a class="" href=""></a>
+          В рабочее время с 9.00 до 21.00
+        </p>
+        <a class="" href="">Обратный звонок</a>
+        <a class="" href="">info@lenoma.ru</a>
+        <a class="" href="">Skype: lenoma.ru</a>
+      </address>
+      <form class="page-footer__form" action="" method="POST">
+        <h3 class="page-footer__form-title">Подписаться на новости</h3>
+        <input class="page-footer__input-email" type="text" placeholder="Введите email">
+        <input class="page-footer__input-submit" type="submit" value="Подписаться">
+        <a class="page-footer__form-link" href="#">Присоединяйтесь к нам</a>
+      </form>
+    </div>
+    <section class="page-footer__copyright">
+      <p class="page-footer__copyright-lenoma">
+        © 2017. Lenoma.ru
+      </p>
+      <p class="page-footer__copyright-evrica">
+        Разработка и поддержка &mdash; &laquo;Эврика&raquo;
+      </p>
+    </section>
+  </footer>
+</body>
+</html>
