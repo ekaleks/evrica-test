@@ -1,13 +1,19 @@
 .main-nav {
   margin: 0 auto;
   width: 1300px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
 
 .main-nav__list {
-  padding: 0;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 6px;
+  padding-bottom: 9px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,35 +21,60 @@
   list-style: none;
 }
 
-.main-nav__item {
-  width: 80px;
-}
-
 .main-nav__item--active:hover{
   color: @brown;
 }
 
 .main-nav__link {
+  padding: 1px;
+  text-align: left;
+  .open-sans;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: normal;
   word-wrap: normal;
   color: @black;
 }
 
 .main-nav__account-link {
+  .open-sans;
   text-decoration: none;
-    font-size: 13px;
+  font-size: 12px;
   font-weight: normal;
   word-wrap: normal;
   color: @black;
-
+  margin-left: 262px;
+  padding: 1px;
 }
 
 .main-nav__favorites-link{
+  padding-left: 1px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-right: 15px;
+  .open-sans;
   text-decoration: none;
-    font-size: 13px;
+    font-size: 12px;
   font-weight: normal;
   word-wrap: normal;
   color: @black;
+}
+
+.main-nav__favorites-link--quantity {
+  position: relative;
+}
+
+.main-nav__favorites-link--quantity::after {
+  content: "2";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: @brown;
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: bold;
+  color: @white;
+  position: absolute;
+  top: -5px;
 }

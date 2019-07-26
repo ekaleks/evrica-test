@@ -1,15 +1,35 @@
+.additional-nav {
+    width: 1440px;
+   margin: 0 auto;
+  background-image: linear-gradient(to right, @black 1280px, @red 1280px, @red 160px);
+}
+
 .additional-nav__list {
+  width: 1440px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  padding: 0;
-  background-color: @black;
+  padding-left: 0;
+  padding-bottom: 20px;
+  padding-top: 18px;
+  margin: 0;
+
+}
+
+.additional-nav__item:nth-child(9){
+  padding-right: 40px;
+}
+
+.additional-nav__item:last-child {
+  text-transform: uppercase;
 }
 
 .additional-nav__link {
+  .open-sans;
   text-decoration: none;
    color: @white;
-   font-size: 16px;
+   font-size: 15px;
+   padding: 1px;
 }

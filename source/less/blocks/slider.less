@@ -1,29 +1,137 @@
-.slider__title {
-  font-size: 56px;
-
+.slider {
+ position: relative;
 }
+
+#btn-1:checked ~ .slider__controls .slider__label[for="btn-1"],
+#btn-2:checked ~ .slider__controls .slider__label[for="btn-2"],
+#btn-3:checked ~ .slider__controls .slider__label[for="btn-3"] {
+  background-color: @brown;
+}
+
+.slider__slide {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1300px;
+  height: 487px;
+  padding-top: 60px;
+  padding-bottom: 58px;
+  background-image:
+   url("../img/slider-background-min.png"),
+  url("../img/slider-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 710px 50%, 100% 50%;
+  background-size: 233px 278px, 1080px 487px;
+}
+
+.slider__field {
+  display: none;
+}
+.slider__label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+  border: 2px solid @brown;
+  margin-left: 28px;
+}
+.slider__controls {
+  z-index: 2;
+  position: absolute;
+  top: 490px;
+  left: 312px;
+}
+
+.slider__title {
+  margin: 0;
+  .open-sans;
+  width: 550px;
+  font-size: 40px;
+  font-weight: bolder;
+  letter-spacing: 6px;
+  line-height: 65px;
+  text-transform: uppercase;
+}
+
+#slide2{
+  display: none;
+}
+
+#slide3{
+  display: none;
+}
+
+.slider__left-inner {
+  padding-top: 146px;
+}
+
 .slider__link-details {
+  display: block;
+  .open-sans;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 9px;
+  letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
   color: @brown;
+  border-bottom: 2px solid @brown;
+  padding-top: 55px;
+  padding-bottom: 15px;
+  width: 220px;
 }
 
 .slider__title-recommendations {
-  font-size: 20px;
+  margin: 0;
+  text-transform: uppercase;
+  .open-sans;
+  font-size: 15px;
   font-weight: bold;
+  letter-spacing: 1.8px;
   color: @black;
+  border-bottom: 1px solid @brown;
+  padding-top: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-bottom: 36px;
+}
+
+.slider__right-inner {
+  width: 330px;
+  background-image: linear-gradient(to right, @light-red 330px, @white 330px, @white 50px);
+  position: absolute;
+  top: 40px;
+  right: -65px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-right: 0;
+  padding-left: 45px;
+  height: 192px;
+  background-color: @light-red;
 }
 
 .slider__list {
+  max-width: 280px;
   list-style: none;
   padding: 0;
+  padding-top: 40px;
+  margin: 0;
+}
+
+.slider__item {
+  margin-bottom: 15px;
+  background-color: @light-red;
 }
 
 .slider__link {
+  background-color: @light-red;
+  .open-sans;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: @black;
+}
+
+.slider__link:hover {
+  color: @red;
 }

@@ -7,34 +7,118 @@
 }
 
 .brands__title {
+  .open-sans;
   text-transform: uppercase;
   text-align: center;
-  font-size: 36px;
+  font-size: 30px;
   width: 420px;
+  letter-spacing: 1px;
   margin-left: 460px;
   margin-right: 460px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   line-height: 36px;
   border-bottom: 2px solid @brown;
 }
 
 .brands__subtitle {
+  .open-sans;
   text-transform: uppercase;
   text-align: center;
-  font-size: 14px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
   width: 1340px;
   color: @brown;
+  margin-top: 0;
 }
 
 .brands__arrow {
   width: 20px;
-  height: 20px;
-  background-color: @brown;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 20px 32px;
+}
+
+.brands__arrow--right {
+  background-image: url("../img/arrow-icon.svg");
+}
+
+.brands__arrow--left {
+  background-image: url("../img/arrow-icon.svg");
+  transform: rotate(180deg);
 }
 
 
 .brands__logo-list {
+  margin-top: 0;
+  margin-bottom: 33px;
   width: 1340px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+
+.brands__logo-link {
+  display: block;
+  width: 200px;
+  height: 78px;
+}
+
+.brands__logo-link--dolce {
+  background-image: url("../img/dolce-gabbana-logo.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 200px 78px;
+}
+
+.brands__logo-link--klein {
+  background-image: url("../img/calvin-klein-logo.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 200px 78px;
+}
+
+.brands__logo-link--bvl {
+  background-image: url("../img/bvlcari-logo.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 200px 78px;
+}
+
+.brands__logo-link--dior {
+  background-image: url("../img/christian-dior-logo.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 200px 78px;
+}
+
+.brands__logo-link--saint {
+  background-image: url("../img/saintLaurent-logo.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 200px 78px;
+}
+
+.brands__logo-link--burb {
+  background-image: url("../img/burberry-logo.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 200px 78px;
+}
+
+.brands__logo-item {
+  width: 200px;
+  height: 78px;
+}
+
+.brands__list {
+  width: 1300px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -43,19 +127,13 @@
   padding: 0;
 }
 
-.brands__logo-item {
-  width: 50px;
-  height: 50px;
+.brands__item {
+  margin-left: 20px;
+  margin-right: 90px;
 }
 
-.brands__list {
-  width: 1300px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  list-style: none;
-  padding: 0;
+.brands__subitem {
+  margin-bottom: 15px;
 }
 
 .brands__sublist {
@@ -63,8 +141,12 @@
   padding: 0;
 }
 
+
+
 .brands__link {
+  .open-sans;
   text-decoration: none;
   color: @black;
-  font-size: 16px;
+  font-size: 14px;
+  padding: 1px;
 }

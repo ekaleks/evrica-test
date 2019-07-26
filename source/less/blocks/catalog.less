@@ -7,19 +7,34 @@
 }
 
 .catalog__title {
+  .open-sans;
   text-transform: uppercase;
   text-align: center;
-  font-size: 36px;
+  font-size: 30px;
+  letter-spacing: 1px;
   width: 420px;
   margin-left: 460px;
   margin-right: 460px;
-  padding-bottom: 30px;
+  margin-bottom: 60px;
+  padding-bottom: 16px;
   line-height: 36px;
   border-bottom: 2px solid @brown;
 }
 
 .catalog__arrow {
   width: 20px;
-  height: 20px;
-  background-color: @brown;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 20px 32px;
+}
+
+.catalog__arrow--right {
+  background-image: url("../img/arrow-icon.svg");
+}
+
+.catalog__arrow--left {
+  background-image: url("../img/arrow-icon.svg");
+  transform: rotate(180deg);
+  opacity: 0.2;
 }
